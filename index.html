@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Task Manager</title>
+
     <link rel="stylesheet" href="style.css">
-      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 </head>
 <body>
 
-   <div data-aos="flip-left">
+    <div class="container" data-aos="flip-left">
+
         <h1>Simple Task Manager</h1>
 
         <div class="input-section">
@@ -18,11 +22,21 @@
         </div>
 
         <ul id="taskList"></ul>
+
     </div>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+
+    <!-- Your JS -->
     <script src="script.js"></script>
+
 </body>
 </html>
